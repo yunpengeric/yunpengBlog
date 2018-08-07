@@ -1224,5 +1224,4 @@ The reason why we do not choose Synology NAS:
 Netgear Nighthawk router has VPN support which secures remote access, and it has double firewall protection which are SPI and NAT. For Cisco smart switch, we do not need to talk about much, since every user knows the good performance of Cisco switch.
 
 *The table below will be covering the device requirements for our wireless function on the train. Device types can be group into two categories: NAS and network devices.*   
-
-![](../images/capstone/16.jpg)
+![16](../images/capstone/16.JPG)
