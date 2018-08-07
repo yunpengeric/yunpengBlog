@@ -172,7 +172,7 @@ Planning was a comparatively small phase as it only required us developing a Gan
 
 The design of the seat counting is performed by analysing an image zone composed by a set of virtual counting lines. The system runs on a commercial PC, does not need a special background and is easily adjustable to different camera height requirements. The image of virtual lines on how it will look like is shown in figure x.
 
-![](images/capstone/1.jpg)
+![](yunpengBlog/images/capstone/1.jpg)
 
 *Figure 1: Seat Availability Design - Virtual Lines *
 
