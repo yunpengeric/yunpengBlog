@@ -9,17 +9,8 @@ nocomments: true
 
 **Team Members** 
 
-Manraj Sangha
+Manraj Sangha, Ashit Hemani, Johnathan Khoury, Yunpeng Yi, Lahiru Yapa, Rong Quan Yau
 
-Ashit Hemani
-
-Johnathan Khoury
-
-Yunpeng Yi
-
-Lahiru Yapa
-
-Rong Quan Yau
 
 
 ## Introduction 
@@ -112,61 +103,63 @@ For the development process, we decided to attempt to follow an agile developmen
 
 The development of the web application took various forms and as development began our initial plan changed. The goal to start by using Java, HTML and CSS was deemed unfeasible due to the lack of experience and development knowledge. However, the use of PHP, SQL database, HTML and CSS became our result.
 
-#### PHP -- 
+#### PHP 
 
 The reason PHP was used in our development process was because of the ability to embed PHP easily into HTML code. Furthermore, PHP being a scripting language made it easier for us to develop within as well as PHP being server-side suited meant that we could easily transition this to a online working server when the application was ready to go live.
 
-#### XAMPP -- 
+#### XAMPP  
 
 During the development, we decided to use XAMPP which is an open source cross platform server package solution which includes; MySQL database, ProFTPD and Apache web Server. This would allow us to replicate a server on our local hardware machines. This would allow us to design and develop the application on our devices and later if feasible within the time frame to translate to an actual server.
 
-##### SQL Database -- 
+#### SQL Database 
 
 The development of the database was created within Microsoft Access and then outputted into SQL database within XAMPP. This would allow us to run SQL code embedded within PHP code to retrieve crucial information from the database. The development of the database included developing all the different train times and stations. This was a time-consuming process and as for the project decided to replicate and show only a select few of the stations to demonstrate functionality.
 
-#### HTML -- 
+#### HTML  
 
 HTML is the standard used when developing web pages and defining the colours, layout and over interface. The development of HTML pages was one which focused on integration of the functionality of the application. The HTML pages were not too difficult to develop as both Johnathan and Manraj has had strong experience within this side of development.
 
-#### CSS -- 
+#### CSS  
 
 CSS is an extension of HTML in the sense that CSS files were developed to improve the overall layout and had no or little impact on the actual functionality of the mobile application. CSS design and development was not of high priority in development process.
 
-*Development Areas*
+#### Development Areas
 
 The development areas are referred to as the functionality areas of the mobile application. These are the main 4 areas that we aimed to achieve some sort of functionality in. Each of these areas had their own challenges and below we have briefly discussed each.
 
-##### Register -- Login -- 
+##### Register -- Login  
 
 The registration of the user as mentioned was both the database and PHP. The use of SQL database within XAMPP allowed us to define key attributed for the register and login system. This allow us to build PHP code which will store information inputted by the user into the database. The PHP code started by defining variables such as username, email, password 1 and password 2. The reasoning behind having both password 1 and 2 was for validation purposes. In addition to password validation we created validation for username and email fields but forcing the user to enter a value before they could successfully sign up for the application.
 
 The login functionality would take the previously defined information and read from the database and compare values to log the user into the system. Although we could not get a final working solution of the login in system we would have achieved this with a bit more experience within PHP and additional resources.
 
-##### Trip Planner -- 
+##### Trip Planner  
 
 Most of the development was focused on the trip planner as this was the core functionality of the application. The ability for user to be able to view train times and select trips was a crucial part of the mobile application. The goal was to setup a database with the train times required for each of the trips and then to use PHP code that would run queries on the database. The result of the queries could then be displayed back to the user. The development started by creating HTML web pages which contained the starting station i.e Jannali. Once they select the Jannali page it'll load another page that will run a PHP script which will connection to the SQL server and retrieve data from the specified table.
 
-##### Opal Functionality -- 
+##### Opal Functionality  
 
 The development for opal app functionality began by using the full web site. We then did some analysis and looked at different use case scenarios and its suitability for a scaled mobile version. After identifying and testing different way to implement we identified that OPAL already has an established mobile version of their website. Testing then was conducted on the mobile version to ensure the same core functionality remained and then using HTML code to direct the user to the mobile site became the best suitable implementation.
 
-##### Wireless Access -- 
+##### Wireless Access  
 
 The development of the wireless access required a lot of testing and different types of implementation. The different types of implementation and testing created to attempt to achieve our goal of displaying the network list is mentioned in the experimental section of the report. After attempting different way to make this solution achievable we finally resulted with a Python scrip which would execute terminal commands if on MAC on CMD commands if on Windows to retrieve a list of Wi-Fi devices available within the proximity of your hardware. This information was then fed into a text file which was then used HTML / PHP code to extract that information and display onto the user's web browser.
 
 ### Testing 
 
-Testing played a very important role within the development of the web app. Due to encountering a lot of problems that have already been stated such as the PHP/HTML database creation a lot of testing was required. After progressing on each part, we decided to test its functionality before moving on to make sure all services and web pages could load. Testing was required in all four main areas of the web application due to making sure all functionality had been achieved from the transition from the design to the development. **Register / Login Testing - **
+Testing played a very important role within the development of the web app. Due to encountering a lot of problems that have already been stated such as the PHP/HTML database creation a lot of testing was required. After progressing on each part, we decided to test its functionality before moving on to make sure all services and web pages could load. Testing was required in all four main areas of the web application due to making sure all functionality had been achieved from the transition from the design to the development. 
+
+**Register / Login Testing **
 
 The main testing was conducted on the register part of the system. As mentioned when developing the application iterative / agile approach was used and with each iteration we would attempt to test certain aspect of the registration. For example, we would test to identify if validation would work successfully for the password, email and username. Not allowing users to proceed without entering those key details was crucial.
 
-#### Trip Timetable -- 
+#### Trip Timetable  
 
 The trip timetables required a larger than expected amount of troubleshooting. After managing to get the SQL code and the PHP code connected to the HTML web page we started to receive many errors when returning the inputted value. We performed decided to troubleshoot the situation where we realised that the SQL / PHP code didn't recognise the entity 'Bondi Junction' due to it being two words; after a good hour of troubleshooting we finally manage to spot the problem where we just needed to add '' around Bondi Junction for it to recognise the it as a single entity. We decided to test it again which this time we could retrieve the correct output.
 
-#### Opal website - 
+#### Opal website  
 
-Most of the testing was conducted to ensure that the OPAL mobile website worked as we required. Once we successfully had the user directed to the OPAL mobile website it was simply testing that it would continue to go to that website on different devise and when sizing was adjusted the site would also adjust. **Wireless - **
+Most of the testing was conducted to ensure that the OPAL mobile website worked as we required. Once we successfully had the user directed to the OPAL mobile website it was simply testing that it would continue to go to that website on different devise and when sizing was adjusted the site would also adjust. **Wireless -**
 
 The wireless testing involved comparison between the retrieved list of wireless access points with the ones available on the physical machine using in built software. For example, on MAC OSX the user can view and select a Wi-Fi network. We compared this list to the ones that was retrieved when we executed our Python code to retrieve the network information.
 
@@ -194,7 +187,7 @@ The design of the seat counting is performed by analysing an image zone composed
 
 ![1](../images/capstone/1.jpg)
 
-*Figure 1: Seat Availability Design - Virtual Lines *
+*Figure 1: Seat Availability Design - Virtual Lines*
 
 **Development Languages and Software: **
 
@@ -212,7 +205,7 @@ We also want to connect our software of counting seats to the database server so
 
 ![2](../images/capstone/2.jpg)
 
-> *Figure 2: Seat Availability - Connection between Mobile App & Software Camlytics *
+*Figure 2: Seat Availability - Connection between Mobile App & Software Camlytics*
 
 **Testing: **
 
@@ -220,9 +213,17 @@ Testing played an essential role in the development of the seat availability. Du
 
 ### Wireless 
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=kZW83SSdRuc
+" target="_blank"><img src="http://img.youtube.com/vi/kZW83SSdRuc/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
 Our wireless section did not require any development of a prototype unlike other modules however our research will be presented in this section. We began by researching on how to implement the wireless concept onto public transportation services and the benefits it would provide the passenger. Our concept of providing LAN entertainment allowed us to conduct research into the software and hardware requirements as well the design requirements to make such a concept feasible. Our development process began by identifying in-scope and out of scope items for the concept. At the same time, we also developed a Gantt chart so we would follow the chart to ensures that every single step is done within the timeframe. As a result, the whole project is completed on time. During our research, we gather some information from companies that had planned to implement the idea. We then modified the concept, so it fits into what we planned to achieve. As for the network topology, we used the picture from Transport Sydney Train website then identify the position for placing each network devices so that the best connectivity is achieved. Lastly, we have considered technical reports on how to construct a proper report so that our concept of building a wireless technology on trains could be explained accordingly.
 
-For our research into hardware please refer to the hardware overview section in the appendix of the report where we have provided the hardware requirements for such a project. Below we have specified the software overview and what would be required to make the concept a reality. Software Overview **File sharing system **
+For our research into hardware please refer to the hardware overview section in the appendix of the report where we have provided the hardware requirements for such a project. Below we have specified the software overview and what would be required to make the concept a reality. 
+
+### Software Overview 
+
+**File sharing system **
 
 **Why window file sharing?**
 
@@ -322,7 +323,7 @@ Accuracy was the most significant concern for us when we started working on this
 
 During the development of the mobile application the use of iterative agile development meant that we could experiment on different ideas and concepts and attempt to see if they could be achieved. Below we have mentioned some of the experimental ideas and results.
 
-#### Wireless -- 
+#### Wireless  
 
 The ability to provide information on the wireless access points we experimented with different ideas. It began by identifying the best way in which we could retrieve Wi-Fi information from the device. The device we were using a MacBook and our focus was to identify some Linux commands that could be run to achieve this.
 
@@ -332,7 +333,7 @@ We attempted to experiment with the use PHP to execute shell commands instead of
 
 The second area in which we attempted to implement a solution for the network access was the use of network information API. The network information API is designed to provide general connection information types and more. The network information API could be used to identify network interfaces and the connections. This could have been a suitable solution for the API for our mobile application. However, after further research and attempting to test and online demo we determined that it was not feasible to implement this network information API. The API would be designed to provide scripts notification when network connection types had changed which would not be suitable for our mobile application.
 
-#### Server -- 
+#### Server  
 
 Having the ability to run the application on a server is a future goal we are aiming to provide for the application. During the development of this project we went through multiple experiments to get this running on an Ubuntu server. This was the original idea at the start of the development cycle to have the application running directly off the server. Due to changes of programming languages meaning we had to change the software and services we used to develop the application we decided not use the server at this moment. Even though this was the case we still experimented on how we could get the server up and running for the future.
 
@@ -366,7 +367,7 @@ Even though this application has some great quality attributes to it, many impro
 
 ## Depth Reflection 
 
-### **[Johnathan Khoury -- 12593087]{.underline} **
+#### Johnathan Khoury 
 
 I had previously never built a web application, furthermore I had also never used PHP to develop any application. We originally wanted to develop the web application with HTML and JavaScript due to gaining knowledge of these in previous subjects, although there was some difficulty in developing the web application so Manraj and I decided to research further into the web application development and decided to use PHP.
 
@@ -376,7 +377,7 @@ A problem that we encountered during the development on the application was inef
 
 Group member communication was very frequent within the group, which everyone was nearly able to turn up the weekly group meetings each week to discuss what we had done. I had found these to be helpful in most weeks due to being able to ask my supervisor questions about the development process of the web application, where I was able to retrieve feedback on how we could improve the application or what is not required for the application.
 
-#### Manraj Sangha -- 12179988 - 
+#### Manraj Sangha  
 
 I believe that the project was a successful one. The reason I think this is because the goal of our project is to provide research and a demonstration of additional services and functionality that could be implemented on Australian transportation services. I believe that this core goal was accomplished.
 
@@ -388,17 +389,17 @@ Improvements I would make next time is better time management of the project and
 
 Group member\'s contribution was good and attendance to team meetings was consistent. Our supervisor was extremely helpful in setting expectation and assisting in pointing us in the right direction when or if we were going off-track. Furthermore, our supervisor provided valuable resources which helped during the development phases for both our people monitoring / seat availability and the mobile application.
 
-#### Rong Quan Yau - 12188431 
+#### Rong Quan Yau  
 
 Through this project, I have gained extra knowledge on NAS device after researching and consulted from my member\'s uncle on how can we build a NAS device for our project. Not only that, but this project also helps me make use of the previous knowledge that I have learned from the university such as Project Management for the Professional in assisting me on structuring the report, networking subjects in determining what devices are required for building this concept. Researching is also another challenging for us as we have to research on how to self-build a NAS which also includes a budget, so we have an estimation on how much it costs. This is one of the beneficial and challenging subjects which it allows students to self-learn extra knowledge.
 
 If there is another chance for doing this project, I will choose to challenge myself to build the LAN network on the train and develop our own software to run the entertainment on passenger\'s smart devices. By doing so, we would be able to maintain the software and NAS easily and ensure the software meet our expectations on meeting passengers demand.
 
-#### Eric Yi -- 12209742 
+#### Yunpeng Yi  
 
 During this development of the project, I have learnt the importance of the group work about planning and discussing. I also have a deep understanding of network protocols and hardware and software. The technology behind popular device Sysnolgy NAS was learnt and implemented so well during the period of project development. What I want more is to implement 5G technology into our project to provide a better service for our customers.
 
-#### Ashit Hemani - 12197772 
+#### Ashit Hemani  
 
 To write and develop code in python was challenging for me as I have less experience in that programming language which I had completed a subject at University called Fundamental of Security. I do have experience in other programming languages like HTML, Java, etc. but the code we want to build and will only work with python. As I have some knowledge of different programming language, It was quite easy to learn python after doing some research and try to learn about it as it was somewhat similar to other programming languages.
 
@@ -406,7 +407,7 @@ While developing the code for seat availability, I also learn about new programm
 
 Our supervisor was very helpful as I can ask my supervisor about the seat availability process and can work on the process further from the feedback. We also have weekly group meeting so we can talk to each other about what they have done each week and can give feedback to them.
 
-**Lahiru Yapa -- 12043244. **
+#### Lahiru Yapa
 
 I found this project interesting and challenging which I really enjoyed. This project also exposed me to how a real project works.
 
@@ -416,25 +417,25 @@ If we had to do this project again I would do it differently like instead of try
 
 During the progress of our report we did encounter several challenges that had some sort of impact on the project. As mentioned in previous sections our project is composed of three modules which build up the entire end solutions. This section provides challenges for each of the modules as each module area encountered a different challenge.
 
-### Mobile App - 
+### Mobile App  
 
-#### 1. Inexperience programming skills and knowledge - 
+#### 1. Inexperience programming skills and knowledge  
 
 The lack of experience and knowledge in programming posed a major challenge on the development of the mobile application. Individuals within the group had minimal programming skills and as a result creating and development of the mobile app took longer than expected. In addition, to increase the time for development the lack of knowledge lead to a lot of research and self-learning of different languages to make the programme a successful one. For example, PHP and Python Programming which was required for the development of the mobile application was learned during the development of the mobile application. This lack of programming skills also leads to the use of inefficient code and module making it difficult to scale the application in the future. It also meant that additional time was taken going back and correcting inefficient code.
 
-#### 2. Compilation Issues - 
+#### 2. Compilation Issues  
 
 PHP as well as Python gave us some compilation issues especially when building PHP files to read and execute queries in the SQL database. This involved correcting the syntax and attempting to execute the PHP code. Python had a few but minimal compilation errors however most of these we overcame by researching some of the common compilation errors.
 
-#### 3. Scope - 
+#### 3. Scope  
 
 During the development of the mobile application we underestimated the actual size of the scope for the project. Although at the beginning of the project the scope did not seem too significant. It was later in the development phases where the combination of time constraints and a large scope posed major challenge. This ultimately resulted in us prioritising the most crucial parts of the application and attempting to fulfil those parts. As a result, this meant parts of the scope was not successfully fulfilled.
 
-#### 4. Time Constraints - 
+#### 4. Time Constraints  
 
 Completing the mobile application within the specified time frame was a big challenge. Time management for this project was key and contingency for lack of knowledge or time to build the database was not considered early in the project. Building of the login system and the errors and research required to develop the PHP code was extremely time consuming. Time was also taken to learn basic PHP and Python programming was much more time-consuming process. The time to better understand and gain the knowledge was subject to the speed in which the developers could learn the languages.
 
-#### 5. Inefficient way of development - 
+#### 5. Inefficient way of development  
 
 The using of PHP and HTML code to develop our application was not the most efficient way to build the application. The web development which would be optimised for mobile application use was not the most efficient way to develop the application. A dedicated mobile application which could be run on mobile devices such as iPhone would be a more efficient way of development.
 
@@ -448,11 +449,11 @@ Another Challenge we encountered was converting the Database that we are creatin
 
 Access to a Web Application using Microsoft SharePoint. Unfortunately, this was not possible due to the Office 365 student license offered by UTS. When we decided to embed SQL into the program this was the original idea of getting the program to function, meaning we had to make many changes to continue to get the database up and running.
 
-#### 8. Using the User's input to display an Output **
+#### 8. Using the User's input to display an Output 
 
 When we first decided to create a Train Timetable web application, the idea was to make the user input the starting and destination train stations which would depict the times each train will arrive at each station. We encountered problems of creating a SQL query to display these times, which we reached a point of just creating the tables in Microsoft Access and exporting them as a HTML file which would display the train times from the input by the user, although this was not required for the product of the Web Application.
 
-### Wireless -- 
+### Wireless  
 
 #### 1. Device requirement 
 
@@ -486,15 +487,15 @@ The challenge of being inexperienced and not having the correct knowledge requir
 
 One possible solution to this challenge is having a better understanding of the programming and development language. The solution to this challenge links into the previous point and better learning of the language could have helped fix common compilation issues. Completing full courses provided by the Uni or on Lynda.com prior to development would have assisted in reducing the challenges faced with compilation.
 
-#### 3. Scope - 
+#### 3. Scope  
 
 A solution to the large scope is to narrow down the scope to be focused on a specific functionality of the mobile application. Another solution to this challenge could have been conducting further research into the different scoping areas to better understanding if they would fit within allocated time frame of the project.
 
-#### 4. Time Constraints - 
+#### 4. Time Constraints  
 
 The only solution to the challenge of time constraints is better time management during the initial planning phases of the project. Having a greater understanding and better planning for the development phase to allow sufficient allocation would have reduced this challenge to a minimal. Building in contingency within the planning phase would have limited the pressure to meet the deadlines when crucial time would be taken learning the programming language required for development.
 
-#### 5. Inefficient Development - 
+#### 5. Inefficient Development  
 
 One solution to the challenge faced with developing in a web page and scaling to mobile is by starting and preparing the project to be developed as a fully functional mobile application. However, this could have presented its own challenges by using this method.
 
@@ -510,9 +511,9 @@ Since the original idea of using Microsoft Access to create the Database then co
 
 WE continued to research into how to make the program display the required out from the user\'s input, which we came across a way through a specific SQL query. Due to the table having empty slots within it, we had to create a query which will only display the rows that have the values on the selected train stations. This could be achieved by using the following query (SELECT TABLE WHERE COLUMN1 \<\> '' AND COLUMN2 \<\> ''), where this will ignore all rows where COLUMN1 and COLUMN2 are found empty.
 
-## Statement of Contribution - 
+## Statement of Contribution  
 
-### **[Johnathan Khoury - 12593087]{.underline}** 
+#### Johnathan Khoury 
 
 -   Performed research into how to develop the web application in relation to what programming languages we would select.
 
@@ -542,7 +543,7 @@ WE continued to research into how to make the program display the required out f
 
 -   Contributed to the documentation of Assessment Task 4: Final report, specifically on the project development process, experimental and results, challenges, solution of challenges, and source code.
 
-### **[Manraj Sangha -- 12179988]{.underline} **
+#### Manraj Sangha 
 
 -   Group leader -- managed the group and answered questions whenever needed to help the progression of the project.
 
@@ -570,7 +571,7 @@ WE continued to research into how to make the program display the required out f
 
 -   Re-compiled all written assessment tasks for final submission.
 
-### **[Ashit Hemani-12197772]{.underline} **
+#### Ashit Hemani
 
 -   Researched and designed the algorithm for the seat availability.
 
@@ -594,7 +595,7 @@ WE continued to research into how to make the program display the required out f
 
 -   Contributed to the documentation of Assessment Task 4: Final report, specifically on Comprehensive review, project development process, experimental and results, quality and depth-reflection and the source code.
 
-**Lahiru Yapa -- 12043244. **
+#### Lahiru Yapa
 
 -   Had an attempted at doing the Project development process for seat availability
 
@@ -602,7 +603,7 @@ WE continued to research into how to make the program display the required out f
 
 -   Wrote up the solution to the challenges for seat availability
 
-#### Eric Yi - 12209742 
+#### Yunpeng Yi 
 
 -   Researching hardware parts of wireless functions which includes o Existing device o Our device(Self-build)
 
@@ -618,7 +619,7 @@ WE continued to research into how to make the program display the required out f
 
 -   Equally contribution to assessment 2 and 3
 
-#### Rong Quan Yau -12188431 
+#### Rong Quan Yau 
 
 -   Focused on the massive research area of the software parts of wireless function o File sharing methodology o Operating system choosing
 
@@ -638,37 +639,31 @@ Below we have specified a complete reference list in UTS Harvard referencing for
 
 2.  HTML Color Codes, n.d, *Get HTML color codes, Hex color codes, RGB and HSL values,* viewed 9th October, 2017, \<[[http://htmlcolorcodes.com/]{.underline}\>](http://htmlcolorcodes.com/)
 
-3.  CodeWithAwa, n.d, *Admin and User Login in PHP and Mysql Database,* viewed 9th October
-
-> 2017, \<[[https://codewithawa.com/posts/admin-and-user-login-in-php-and-mysql-database]{.underline}\>](https://codewithawa.com/posts/admin-and-user-login-in-php-and-mysql-database)
+3.  CodeWithAwa, n.d, *Admin and User Login in PHP and Mysql Database,* viewed 9th October 2017, \<[[https://codewithawa.com/posts/admin-and-user-login-in-php-and-mysql-database]{.underline}\>](https://codewithawa.com/posts/admin-and-user-login-in-php-and-mysql-database)
 
 4.  CodeWithAva, n.d, *Complete user registration system using PHP and MySQL database,* viewed 9th October, 2017, \<[[https://codewithawa.com/posts/complete-user-registrationsystem-using-php-and-mysql-database]{.underline}\>](https://codewithawa.com/posts/complete-user-registration-system-using-php-and-mysql-database)
 
 5.  GitHub, 30th May 2014, *node-wireless,* viewed 9th October 2017,
 
-> [\<[https://github.com/tlhunter/node-wireless]{.underline}\>](https://github.com/tlhunter/node-wireless)
+[\<[https://github.com/tlhunter/node-wireless]{.underline}\>](https://github.com/tlhunter/node-wireless)
 
 6.  Unknown, n.d, *Network information API Sample,* viewed 9th October 2017,
-
-> [\<[https://googlechrome.github.io/samples/network-information/]{.underline}\>](https://googlechrome.github.io/samples/network-information/)
+ [\<[https://googlechrome.github.io/samples/network-information/]{.underline}\>](https://googlechrome.github.io/samples/network-information/)
 
 7.  Google, May 23rd 2017, *Google API Client Libraries,* viewed 9th October 2017,
 
-> [\<[https://developers.google.com/api-client-library/javascript/start/start-js]{.underline}\>](https://developers.google.com/api-client-library/javascript/start/start-js)
+[\<[https://developers.google.com/api-client-library/javascript/start/start-js]{.underline}\>](https://developers.google.com/api-client-library/javascript/start/start-js)
 
 8.  Stackoverflow, 2010, *Read data from text file PHP,* viewed 9th October 2017,
 
-> [\<[https://stackoverflow.com/questions/2648726/read-data-from-text-file-php]{.underline}\>](https://stackoverflow.com/questions/2648726/read-data-from-text-file-php)
+ [\<[https://stackoverflow.com/questions/2648726/read-data-from-text-file-php]{.underline}\>](https://stackoverflow.com/questions/2648726/read-data-from-text-file-php)
 
-9.  ServerFault, 2015, *Executing a python script through PHP button,* viewed 9th October 2017,
-
-> [\<[https://serverfault.com/questions/679198/executing-a-python-script-through-php-button]{.underline}\>](https://serverfault.com/questions/679198/executing-a-python-script-through-php-button)
+9. ServerFault, 2015, *Executing a python script through PHP button,* viewed 9th October 2017,[\<[https://serverfault.com/questions/679198/executing-a-python-script-through-php-button]{.underline}\>](https://serverfault.com/questions/679198/executing-a-python-script-through-php-button)
 
 10. Stackoverflow, 2013, *Execute Python in a php script using shell\_exec(),* viewed 9th October 2017, \<[[https://stackoverflow.com/questions/18721066/execute-python-in-a-php-scriptusing-shell-exec]{.underline}\>](https://stackoverflow.com/questions/18721066/execute-python-in-a-php-script-using-shell-exec)
 
 11. Stackoverflow, 2011, *PHP Shell\_exec() vs exec(),* viewed 9th October 2017,
-
-> [\<[https://stackoverflow.com/questions/7093860/php-shell-exec-vs-exec]{.underline}\>](https://stackoverflow.com/questions/7093860/php-shell-exec-vs-exec)
+     [\<[https://stackoverflow.com/questions/7093860/php-shell-exec-vs-exec]{.underline}\>](https://stackoverflow.com/questions/7093860/php-shell-exec-vs-exec)
 
 12. Stackoverflow, 2013, *Execute python in a php script using shell\_exec(),* viewed 9^th^ October 2017 \< [[https://stackoverflow.com/questions/18721066/execute-python-in-a-php-scriptusing-shell-exec]{.underline}\>](https://stackoverflow.com/questions/18721066/execute-python-in-a-php-script-using-shell-exec)
 
@@ -686,9 +681,9 @@ Below we have specified a complete reference list in UTS Harvard referencing for
 
 19. Lynda, 2017, *PHP with MySQL Essential Training: 1 The Basics,* Kevin Skoglund, viewed 9^th^
 
-> October 2017, \< [[https://www.lynda.com/PHP-tutorials/PHP-MySQL-Essential-Training-1-]{.underline}](https://www.lynda.com/PHP-tutorials/PHP-MySQL-Essential-Training-1-Basics/587674-2.html)
->
-> [[Basics/587674-2.html]{.underline}\>](https://www.lynda.com/PHP-tutorials/PHP-MySQL-Essential-Training-1-Basics/587674-2.html)
+    October 2017, \< [[https://www.lynda.com/PHP-tutorials/PHP-MySQL-Essential-Training-1-]{.underline}](https://www.lynda.com/PHP-tutorials/PHP-MySQL-Essential-Training-1-Basics/587674-2.html)
+
+    [[Basics/587674-2.html]{.underline}\>](https://www.lynda.com/PHP-tutorials/PHP-MySQL-Essential-Training-1-Basics/587674-2.html)
 
 20. Lynda, 2013, *Learning Python,* viewed 9^th^ October 2017, \< [[https://www.lynda.com/Pythontutorials/Up-Running-Python/122467-2.html]{.underline}\>](https://www.lynda.com/Python-tutorials/Up-Running-Python/122467-2.html)
 
@@ -726,17 +721,13 @@ Below we have specified a complete reference list in UTS Harvard referencing for
 
 37. Mwave, viewed 1st Sep 2017, \<[[https://goo.gl/L182X9]{.underline}\>](https://goo.gl/L182X9)
 
-38. Mwave, viewed 3rd Sep 2017, \<[[https://www.mwave.com.au/product/evga-supernova-]{.underline}](https://www.mwave.com.au/product/evga-supernova-750w-g2-80-gold-modular-power-supply-ab58319#detailTabs=tabSpecifications)
-
-> [[750w-g2-80-gold-modular-power-supply-ab58319\#detailTabs=tabSpecifications]{.underline}\>](https://www.mwave.com.au/product/evga-supernova-750w-g2-80-gold-modular-power-supply-ab58319#detailTabs=tabSpecifications)
+38. Mwave, viewed 3rd Sep 2017, \<[[https://www.mwave.com.au/product/evga-supernova-]{.underline}](https://www.mwave.com.au/product/evga-supernova-750w-g2-80-gold-modular-power-supply-ab58319#detailTabs=tabSpecifications)[[750w-g2-80-gold-modular-power-supply-ab58319\#detailTabs=tabSpecifications]{.underline}\>](https://www.mwave.com.au/product/evga-supernova-750w-g2-80-gold-modular-power-supply-ab58319#detailTabs=tabSpecifications)
 
 39. Mwave, viewed 1st Sep 2017, \<[[https://www.mwave.com.au/product/samsung-850-evo250gb-25-sata-iii-ssd-mz75e250-ab59172]{.underline}\>](https://www.mwave.com.au/product/samsung-850-evo-250gb-25-sata-iii-ssd-mz75e250-ab59172)
 
 40. Mwave, viewed 1st Sep 2017, \<[[https://www.mwave.com.au/product/wd-wd40efrx-4tb-red35-intellipower-sata3-nas-hard-drive-ab51412]{.underline}\>](https://www.mwave.com.au/product/wd-wd40efrx-4tb-red-35-intellipower-sata3-nas-hard-drive-ab51412)
 
-41. Mwave, viewed 1st Sep 2017, \<[[https://www.mwave.com.au/product/windows-10-home-]{.underline}](https://www.mwave.com.au/product/windows-10-home-3264bit-usb-drive-ab64970#detailTabs=tabSpecifications)
-
-> [[3264bit-usb-drive-ab64970\#detailTabs=tabSpecifications]{.underline}\>](https://www.mwave.com.au/product/windows-10-home-3264bit-usb-drive-ab64970#detailTabs=tabSpecifications)
+41. Mwave, viewed 1st Sep 2017, \<[[https://www.mwave.com.au/product/windows-10-home-]{.underline}](https://www.mwave.com.au/product/windows-10-home-3264bit-usb-drive-ab64970#detailTabs=tabSpecifications)[[3264bit-usb-drive-ab64970\#detailTabs=tabSpecifications]{.underline}\>](https://www.mwave.com.au/product/windows-10-home-3264bit-usb-drive-ab64970#detailTabs=tabSpecifications)
 
 42. Mwave, viewed 1st Sep 2017, \<[[https://www.mwave.com.au/product/ubiquiti-networksuapacpro-80211ac-dualradio-access-point-ab68773]{.underline}\>](https://www.mwave.com.au/product/ubiquiti-networks-uapacpro-80211ac-dualradio-access-point-ab68773)
 
@@ -747,38 +738,30 @@ Below we have specified a complete reference list in UTS Harvard referencing for
 45. OPlayer Lite - media player, video file manager version 3.3 2016, iOS application, Olimsoft, [\<[https://itunes.apple.com/us/app/oplayer-lite-media-player-video-filemanager/id385907472?mt=8\>]{.underline} ](https://itunes.apple.com/us/app/oplayer-lite-media-player-video-file-manager/id385907472?mt=8)
 
 46. OPlayer version 2.1.01 2015, Andriod application, Olimsoft CO. LTD,
-
-> [\<[https://play.google.com/store/apps/details?id=com.olimsoft.android.oplayer.pro&hl=en]{.underline}\>](https://play.google.com/store/apps/details?id=com.olimsoft.android.oplayer.pro&hl=en)
+ [\<[https://play.google.com/store/apps/details?id=com.olimsoft.android.oplayer.pro&hl=en]{.underline}\>](https://play.google.com/store/apps/details?id=com.olimsoft.android.oplayer.pro&hl=en)
 
 47. Thesisscientists, *Chapter 11: NFS & Debugging Technique*, viewed 2nd Sep 2017, [\<[https://goo.gl/ssVuj7]{.underline}](https://goo.gl/ssVuj7) \>
 
 48. Train Design 2002, *Cairns Tilt Train will have at-seat video entertainment: an at-seat video entertainment system is part of a new concept for long distance rail travel in Queensland, *
-
-> *Australia,* International Railway Journal,
->
-> [\<[http://go.galegroup.com/ps/i.do?p=EAIM&sw=w&u=uts&v=2.1&id=GALE%7CA83733334&i t=r&asid=8dff623a248b58d5f85fc4f846fb0366]{.underline}\>](http://go.galegroup.com/ps/i.do?p=EAIM&sw=w&u=uts&v=2.1&id=GALE%7CA83733334&it=r&asid=8dff623a248b58d5f85fc4f846fb0366)
+*Australia,* International Railway Journal,
+ [\<[http://go.galegroup.com/ps/i.do?p=EAIM&sw=w&u=uts&v=2.1&id=GALE%7CA83733334&i t=r&asid=8dff623a248b58d5f85fc4f846fb0366]{.underline}\>](http://go.galegroup.com/ps/i.do?p=EAIM&sw=w&u=uts&v=2.1&id=GALE%7CA83733334&it=r&asid=8dff623a248b58d5f85fc4f846fb0366)
 
 49. Sorptec, viewed 1st Sep 2017, \<[[https://goo.gl/Xp9zaK]{.underline}\>](https://goo.gl/Xp9zaK)
 
 50. Sheinin, S, 2002, 'Global Information Assurance Certification Paper', SANS Institute 20002002.
 
 51. *GitHub* n.d., viewed 24 September 2017,
-
-> [\<[https://github.com/shantnu/FaceDetect/blob/master/face\_detect.py]{.underline}\>](https://github.com/shantnu/FaceDetect/blob/master/face_detect.py).
+[\<[https://github.com/shantnu/FaceDetect/blob/master/face\_detect.py]{.underline}\>](https://github.com/shantnu/FaceDetect/blob/master/face_detect.py).
 
 52. *GitHub* n.d., viewed 26 September 2017, [\<[https://github.com/shantnu/Webcam-FaceDetect/blob/master/webcam.py]{.underline}\>](https://github.com/shantnu/Webcam-Face-Detect/blob/master/webcam.py)
 
 53. *GitHub* n.d., viewed 30 September 2017, [\<[https://github.com/LukashenkoEvgeniy/PeopleCounter/blob/master/PeopleCounterMain.py]{.underline}\>](https://github.com/LukashenkoEvgeniy/People-Counter/blob/master/PeopleCounterMain.py)
 
 54. Tiwari, S. 2014, \'Face Recognition with Python, in Under 25 Lines of Code, *blog*, Shantnu
-
-> Tiwari weblog, Real Python ,viewed 24 September 2017,
->
-> [\<[https://realpython.com/blog/python/face-recognition-with-python/]{.underline}\>](https://realpython.com/blog/python/face-recognition-with-python/)
+Tiwari weblog, Real Python ,viewed 24 September 2017, [\<[https://realpython.com/blog/python/face-recognition-with-python/]{.underline}\>](https://realpython.com/blog/python/face-recognition-with-python/)
 
 55. Tiwari, S. 2014, \'Face Recognition with Python, in Under 25 Lines of Code, *blog*, Shantnu Tiwari weblog, Real Python ,viewed 26 September 2017,
-
-> [\<[https://realpython.com/blog/python/face-detection-in-python-using-a-webcam/]{.underline}\>](https://realpython.com/blog/python/face-detection-in-python-using-a-webcam/)
+[\<[https://realpython.com/blog/python/face-detection-in-python-using-a-webcam/]{.underline}\>](https://realpython.com/blog/python/face-detection-in-python-using-a-webcam/)
 
 ### Appendix 
 
