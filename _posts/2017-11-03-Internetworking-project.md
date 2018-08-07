@@ -1,6 +1,11 @@
-
-
-# Internetworking Project 
+---
+layout: post
+title: Internetworking Project
+categories: 
+ - projects
+permalink: /posts/1
+nocomments: true  
+---
 
 ## Introduction 
 
@@ -66,7 +71,7 @@ In addition, to having initial design to show layout and the flow of the applica
 
 The design of the register screen would be one which would take key input from the user such as username, email, and password. Limiting to three inputs made data management easier as well as making the overall design similar and familiar to the user. The design also incorporated data validation such as password confirmation to make sure the user entered the correct password and could clearly see if they had not. Furthermore, the PHP code was primarily derived from online resources where using a database to store key attributed such as ID, username, email and password which could be easily accessed when retrieving for login functionality.
 
-  *Trip Planner*
+ *Trip Planner*
 
 The design for the trip planner changed throughout the designing phase and we landed on a design which we believe best met functionality and user requirement. The user is promoted to select the starting station and then select the end station. This then presents the user a list of all the available train times which we believed to be the most efficient solution. Showing multiple train times allows the user to have a clear representation of the what train they can realistically catch.
 
@@ -172,7 +177,7 @@ Planning was a comparatively small phase as it only required us developing a Gan
 
 The design of the seat counting is performed by analysing an image zone composed by a set of virtual counting lines. The system runs on a commercial PC, does not need a special background and is easily adjustable to different camera height requirements. The image of virtual lines on how it will look like is shown in figure x.
 
-![](../images/capstone/1.jpg)
+![1](../images/capstone/1.jpg)
 
 *Figure 1: Seat Availability Design - Virtual Lines *
 
@@ -190,7 +195,7 @@ After developing code in python, we did not get the result we want as it was not
 
 We also want to connect our software of counting seats to the database server so the passengers can see the availability of seats on the mobile application which we have created. The process on how the software will connect to mobile application is shown in figure x.
 
-![](media/image2.jpg){width="6.5in" height="4.03125in"}
+![2](../images/capstone/2.jpg)
 
 > *Figure 2: Seat Availability - Connection between Mobile App & Software Camlytics *
 
@@ -248,23 +253,23 @@ Introducing wireless function of our project, as we discussed in the previous pa
 
 The core part (Figure 1) contains a NAS, a router and one switch. NAS stores media and forward data packets in the local network through our router. The switch provides more ports for our access point since we do not have enough one on our router.
 
-![](media/image3.jpg){width="4.677083333333333in" height="0.8020833333333334in"}
+![](../images/capstone/3.jpg)
 
 *Figure 1: Core part*
 
 On each carriage of the train, we equipped the access point that forwards entertainment files to users. (Figure 2) All access points were set up as a same SSID name channel and encryption which allows user can hand-off on the train. A User simply connects to the wi-fi and use O-player to access our prepared media files in the NAS.
 
-![](media/image4.jpg){width="3.9479166666666665in" height="0.9375in"}
+![](../images/capstone/4.jpg)
 
 *Figure 2: Railway carriage*
 
 In the section where we were introducing file sharing system, we have already discussed how windows 10 file sharing system takes advantages than others. In addition, windows 10 supports various types of files due to it was built for public, therefore, it allows us to manage media files more efficiently. To configure windows sharing that allows passengers can access our media files, the public folder sharing section should be turned on (see figure 3) and make sure our NAS has assigned a static IP since we do not want to see the linked between passengers' devices and NAS will be broken due to a dynamic IP address. Regarding user-friendly, we would like to stick a note of the instruction along with a static IP of our NAS to help passengers use our WI-FI service.
 
-![](media/image5.jpg){width="6.239583333333333in" height="3.3333333333333335in"}
+![](../images/capstone/5.jpg)
 
 Introducing O-player which is the ios app that supports file sharing between client and NAS. In the section 5.2, we already discuss the key features of this app. The idea of better explanation for how we implement it as our main app in our project, see the instruction which we will stick it on the back of the seat below.
 
-![](media/image6.jpg){width="5.302083333333333in" height="4.354166666666667in"}
+![](../images/capstone/6.jpg)
 
 ### Real World Example - Current entertainment 
 
@@ -282,11 +287,11 @@ During development process for seat availability we have done multiple experimen
 
 First, we started with research of an algorithm that counts the number of people. We can also select sensors for counting people, but we think live videos will be a better choice as for sensors we were not getting an accurate count as sensors cannot differentiate between humans and objects. By using cameras, algorithms, and codes, we get an accurate count of people. We try to build different algorithms and also made flowchart on it about how the algorithm will work. We made a system overview of the project on how the algorithm will work as shown in figure x.
 
-![](media/image7.jpg){width="6.010416666666667in" height="1.96875in"}
+![](../images/capstone/7.jpg)
 
-After building an algorithm we started working on the design of the system on how it will work, what type of equipments we will need and how much it will cost. We decided to use existing camera on the Sydney trains and install our algorithm in that so it will be easy for us as we can save money and can help Sydney transportation by giving people how many idle seats are available in a carriage. Camera position will be like as shown in figure x. and the system will work as shown in figure x
+After building an algorithm we started working on the design of the system on how it will work, what type of equipment we will need and how much it will cost. We decided to use existing camera on the Sydney trains and install our algorithm in that so it will be easy for us as we can save money and can help Sydney transportation by giving people how many idle seats are available in a carriage. Camera position will be like as shown in figure x. and the system will work as shown in figure x
 
-![](media/image8.jpg){width="2.5625in" height="3.4916666666666667in"}
+![](../images/capstone/8.jpg)
 
 We did not get much success with our algorithm, so we made tiny changes in the algorithm and started working on coding for our system. As most of our group members just have a basic knowledge of python coding, it was difficult to get the accurate coding. We got help from the internet while searching for more information about python we found a program called OpenCV(open source computer vision) which is a library of different programming functions mainly aimed for real-time applications. We choose openCV because the library is cross-platform that means it supports various programming languages and it is free to use under the BSD license. We started building the code for our system with python and openCV as shown in Appendix X. We successfully build and tested the code for face detection but for counting people in congested places it did not succeed as our expectations. So, we started working on our script again made few changes and test the new code this time it did work for counting people, but we did not get the accurate results as our script was also counting background object as well with the humans.
 
@@ -296,21 +301,7 @@ This tool works on the similar algorithm and code as we developed but did not ge
 
 Accuracy was the most significant concern for us when we started working on this project. When we were comparing our data of counting passengers manually, and with the software Camlytics we got a pretty good result of 98% accurate data. The table below shows the result we got by counting manually and with the program Camlytics.
 
-+---------------+-----------------------+----------------+----------------+---+
-| **Time**      | **Counts**            | > **Positive** | > **Negative** |   |
-|               |                       |                |                |   |
-|               | **Manually Software** |                |                |   |
-+===============+=======================+================+================+===+
-| > **9:00 am** | 150                   | 153            | 0              | 3 |
-+---------------+-----------------------+----------------+----------------+---+
-| **10:00 am**  | 103                   | 104            | 0              | 1 |
-+---------------+-----------------------+----------------+----------------+---+
-| **11:00 am**  | 65                    | 66             | 0              | 1 |
-+---------------+-----------------------+----------------+----------------+---+
-| > **12:00pm** | 50                    | 50             | 0              | 0 |
-+---------------+-----------------------+----------------+----------------+---+
-| **Total**     | 368                   | 373            | 0              | 5 |
-+---------------+-----------------------+----------------+----------------+---+
+![](../images/capstone/9.jpg)
 
 ### Experimental Results for Mobile Application 
 
@@ -778,35 +769,415 @@ Below we have specified a complete reference list in UTS Harvard referencing for
 
 The appendix of the report provides additional resources, research and code for our project.
 
+#### Seat Availability / People Counter  
+
+```
+import cv2 import sys 
+ 
+# Get user supplied values imagePath = sys.argv[1] 
+cascPath = "haarcascade_frontalface_default.xml" 
+ 
+# Create the haar cascade 
+faceCascade = cv2.CascadeClassifier(cascPath) 
+ 
+# Read the image 
+image = cv2.imread(imagePath) gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) 
+ 
+# Detect faces in the image 
+faces = faceCascade.detectMultiScale(    gray, 
+   scaleFactor=1.1,    minNeighbors=5, 
+   minSize=(30, 30), 
+   flags = cv2.cv.CV_HAAR_SCALE_IMAGE 
+) 
+ 
+print("Found {0} faces!".format(len(faces))) 
+ 
+# Draw a rectangle around the faces for (x, y, w, h) in faces: 
+   cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2) 
+ 
+cv2.imshow("Faces found", image) cv2.waitKey(0) 
+
+```
+
+Appendix 1: source code - Face Recognition with Python, in Under 25 Lines of Code  
+
+```
+import cv2 import sys 
+ 
+cascPath = "haarcascade_frontalface_default.xml" faceCascade = cv2.CascadeClassifier(cascPath) 
+ 
+video_capture = cv2.VideoCapture(0) 
+ 
+while True: 
+   # Capture frame-by-frame    ret, frame = video_capture.read() 
+ 
+   gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY) 
+ 
+   faces = faceCascade.detectMultiScale(        gray, 
+       scaleFactor=1.1,        minNeighbors=5, 
+       minSize=(30, 30), 
+       flags=cv2.cv.CV_HAAR_SCALE_IMAGE 
+   ) 
+ 
+   # Draw a rectangle around the faces    for (x, y, w, h) in faces:        cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2) 
+ 
+   # Display the resulting frame 
+   cv2.imshow('Video', frame) 
+ 
+   if cv2.waitKey(1) & 0xFF == ord('q'): 
+       break 
+ 
+# When everything is done, release the capture video_capture.release() 
+cv2.destroyAllWindows() 
+
+```
+
+Appendix 2: source code - Face Detection in Python Using a Webcam	 
+
+```python
+import argparse import datetime import imutils import math import cv2 
+import numpy as np 
+ 
+width = 800 
+ 
+textIn = 0 
+textOut = 0 
+ 
+def testIntersectionIn(x, y): 
+ 
+   res = -450 * x + 400 * y + 157500    if((res >= -550) and  (res < 550)): 
+       print (str(res))        return True 
+   return False 
+ 
+def testIntersectionOut(x, y):    res = -450 * x + 400 * y + 180000    if ((res >= -550) and (res <= 550)): 
+       print (str(res)) 
+       return True 
+ 
+   return False 
+ 
+camera = cv2.VideoCapture("test2.mp4") 
+ 
+firstFrame = None 
+ 
+# loop over the frames of the video while True: 
+   # grab the current frame and initialize the occupied/unoccupied 
+   # text 
+   (grabbed, frame) = camera.read()    text = "Unoccupied" 
+ 
+   # if the frame could not be grabbed, then we have reached the end 
+   # of the video    if not grabbed: 
+       break 
+   # resize the frame, convert it to grayscale, and blur it 
+   frame = imutils.resize(frame, width=width) 
+   gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)    gray = cv2.GaussianBlur(gray, (21, 21), 0) 
+ 
+   # if the first frame is None, initialize it    if firstFrame is None:        firstFrame = gray        continue 
+   # compute the absolute difference between the current frame and 
+   # first frame 
+   frameDelta = cv2.absdiff(firstFrame, gray)    thresh = cv2.threshold(frameDelta, 25, 255, cv2.THRESH_BINARY)[1] 
+   # dilate the thresholded image to fill in holes, then find contours 
+   # on thresholded image 
+   thresh = cv2.dilate(thresh, None, iterations=2) 
+   _, cnts, _ = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE) 
+   # loop over the contours    for c in cnts: 
+       # if the contour is too small, ignore it        if cv2.contourArea(c) < 12000:            continue 
+       # compute the bounding box for the contour, draw it on the frame,        # and update the text 
+       (x, y, w, h) = cv2.boundingRect(c) 
+       cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2) 
+ 
+       cv2.line(frame, (width / 2, 0), (width, 450), (250, 0, 1), 2) #blue line 
+       cv2.line(frame, (width / 2 - 50, 0), (width - 50, 450), (0, 0, 255), 2)#red line 
+ 
+       rectagleCenterPont = ((x + x + w) /2, (y + y + h) /2)        cv2.circle(frame, rectagleCenterPont, 1, (0, 0, 255), 5) 
+ 
+       if(testIntersectionIn((x + x + w) / 2, (y + y + h) / 2)): 
+           textIn += 1 
+ 
+       if(testIntersectionOut((x + x + w) / 2, (y + y + h) / 2)):            textOut += 1 
+ 
+       # draw the text and timestamp on the frame 
+ 
+       # show the frame and record if the user presses a key 
+       # cv2.imshow("Thresh", thresh) 
+       # cv2.imshow("Frame Delta", frameDelta) 
+
+```
+
+Appendix 3: source code - PeopleCounterMain.Py	 
+
+#### Mobile Application – Code 
+
+File Name: App.CSS 
+
+```css
+* { 
+ 	margin: 0px; 
+ 	padding: 0px; 
+} 
+body { 
+ 	font-size: 120%; 
+ 	background: #808080; 
+} 
+ 
+ 
+.header { 
+ 	width: 30%;  	margin: 50px auto 0px;  	color: white;  	background: #689052;  	text-align: center;  	border: 1px solid #000000;  	border-bottom: none;   	border-radius: 10px 10px 0px 0px; 
+ 	padding: 20px; 
+} 
+form, .content { 
+ 	width: 30%;  	margin: 0px auto;  	padding: 20px;  	border: 1px solid #00000qq;  	background: white; 
+ 	border-radius: 0px 0px 10px 10px; 
+} 
+.main-button { 
+ 	padding-left: 150px; 
+ 	margin: 10px 0px 10px 0px; 
+} 
+.btn { 
+ 	 width:40%;  	position: center;  	padding: 10px;  	font-size: 15px;  	color: white;  	background: #808080;  	border: 1px black; 
+ 	border-radius: 5px; 
+ 
+} 
+.btn1 { 
+ 	width:40%; 
+ 	position: center;  	padding: 10px; 
+ 	font-size: 15px;  	color: white;  	background: #000000;  	border: 1px black; 
+ 	border-radius: 5px; 
+} 
+.btn2 { 
+ 	width:40%; 
+ 	position: center;  	padding: 10px;  	font-size: 15px;  	color: white;  	background: #000000;  	border: 1px black; 
+ 	border-radius: 5px; 
+} 
+
+```
+
+File Name: Create_User.PHP 
+
+```php
+<?php include('../functions.php') ?> 
+<!DOCTYPE html> 
+<html> 
+<head> 
+ 	<title>Registration system PHP and MySQL - Create user</title> 
+ 	<link rel="stylesheet" type="text/css" href="../style.css"> 
+ 	<style> 
+ 	 	.header { 
+ 	 	 	background: #003366; 
+ 	 	} 
+ 	 	button[name=register_btn] { 
+ 	 	 	background: #003366; 
+ 	 	} 
+ 	</style> 
+</head> 
+<body> 
+ 	<div class="header"> 
+ 	 	<h2>Admin - create user</h2> 
+ 	</div> 
+ 	 
+ 	<form method="post" action="create_user.php"> 
+ 
+ 	 	<?php echo display_error(); ?> 
+ 
+ 	 	<div class="input-group"> 
+ 	 	 	<label>Username</label> 
+ 	 	 	<input type="text" name="username" value="<?php echo $username; 
+?>"> 
+ 	 	</div> 
+ 	 	<div class="input-group"> 
+ 	 	 	<label>Email</label> 
+ 	 	 	<input type="email" name="email" value="<?php echo $email; ?>"> 
+ 	 	</div> 
+ 	 	<div class="input-group"> 
+ 	 	 	<label>User type</label> 
+ 	 	 	<select name="user_type" id="user_type" > 
+ 	 	 	 	<option value=""></option> 
+ 	 	 	 	<option value="admin">Admin</option> 
+ 	 	 	 	<option value="user">User</option> 
+ 	 	 	</select> 
+ 	 	</div> 
+ 	 	<div class="input-group"> 
+ 	 	 	<label>Password</label> 
+ 	 	 	<input type="password" name="password_1"> 
+ 	 	</div> 
+ 	 	<div class="input-group"> 
+ 	 	 	<label>Confirm password</label> 
+ 	 	 	<input type="password" name="password_2"> 
+ 	 	</div> 
+ 	 	<div class="input-group"> 
+ 	 	 	<button type="submit" class="btn" name="register_btn"> + Create user</button> 
+ 	 	</div> 
+ 	</form> 
+</body> 
+</html> 
+
+```
+
+##### File Name: Functions.PHP 
+
+```
+<?php  
+session_start(); 
+ 
+// connect to database 
+$db = mysqli_connect('localhost', 'root', '', 'multi_login'); 
+ 
+// variable declaration 
+$username = ""; 
+$email    = ""; 
+$errors   = array();  
+ 
+// call the register() function if register_btn is clicked if (isset($_POST['register_btn'])) {  	register(); 
+} 
+ 
+// REGISTER USER function register(){ 
+ 	// call these variables with the global keyword to make them available in function  	global $db, $errors, $username, $email; 
+ 
+ 	// receive all input values from the form. Call the e() function 
+    // defined below to escape form values 
+ 	$username    =  e($_POST['username']); 
+ 	$email       =  e($_POST['email']); 
+ 	$password_1  =  e($_POST['password_1']); 
+ 	$password_2  =  e($_POST['password_2']); 
+ 
+
+ 	// form validation: ensure that the form is correctly filled  	if (empty($username)) {  
+	 	 	array_push($errors, "Username is required");  
+	 	} 
+	 	if (empty($email)) {  
+	 	 	array_push($errors, "Email is required");  
+	 	} 
+	 	if (empty($password_1)) {  
+	 	 	array_push($errors, "Password is required");  
+	 	} 
+	 	if ($password_1 != $password_2) { 
+	 	 	array_push($errors, "The two passwords do not match"); 
+	 	} 
+ 
+	 	// register user if there are no errors in the form 
+	 	if (count($errors) == 0) { 
+  $password = md5($password_1);//encrypt the password before saving in the database 
+ 
+	 	 	if (isset($_POST['user_type'])) { 
+	 	 	 	$user_type = e($_POST['user_type']); 
+	 	 	 	$query = "INSERT INTO users (username, email, user_type, password)  
+	 	 	 	 	 	  VALUES('$username', '$email', '$user_type', 
+'$password')"; 
+	 	 	 	mysqli_query($db, $query); 
+	 	 	 	$_SESSION['success']  = "New user successfully created!!"; 
+	 	 	 	header('location: home.php'); 
+	 	 	}else{ 
+ 	 	 	$query = "INSERT INTO users (username, email, user_type, password)   	 	 	 	 	  VALUES('$username', '$email', 'user', '$password')";  	 	 	mysqli_query($db, $query); 
+ 
+	 	 	 	// get id of the created user 
+	 	 	 	$logged_in_user_id = mysqli_insert_id($db); 
+ 
+ 	 	 	$_SESSION['user'] = getUserById($logged_in_user_id); // put logged in user in session 
+	 	 	 	$_SESSION['success']  = "You are now logged in"; 
+	 	 	 	header('location: Logged_In.php'); 	 	 	 	 
+	 	 	} 
+	 	} 
+} 
+ 
+// return user array from their id 
+function getUserById($id){ 
+	 	global $db; 
+	 	$query = "SELECT * FROM users WHERE id=" . $id; 
+	 	$result = mysqli_query($db, $query); 
+ 
+	 	$user = mysqli_fetch_assoc($result); 
+	 	return $user; 
+} 
+ 
+// escape string function e($val){ 
+ 	global $db; 
+ 	return mysqli_real_escape_string($db, trim($val)); 
+} 
+ 
+function display_error() { 
+ 	global $errors; 
+ 
+ 	if (count($errors) > 0){  	 	echo '<div class="error">'; 
+ 	 	 	foreach ($errors as $error){  	 	 	 	echo $error .'<br>'; 
+ 	 	 	} 
+ 	 	echo '</div>'; 
+ 	} 
+} 	 
+
+```
+
+File Name: HomePage.HTML 
+
+```
+<!DOCTYPE html> 
+<html> 
+<head> 
+ 	<title>Mobile App</title> 
+</head> 
+ 
+<html> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <div class="header"> 
+ 	<h2>Transport Application</h2> 
+</div> 
+</head> 
+<body> 
+<form>  
+  <div class="main-button">    <button class="btn"> <a 
+href="javascript:q=(document.location.href);void(open('http://localhost/registration/register.php' ,'resizable,location,menubar,toolbar,scrollbars,status'));">Register / Login </button></a> 
+ 	 	</div> 
+  <div class="main-button">    <button class="btn"> <a 
+href="javascript:q=(document.location.href);void(open('http://localhost/registration/Buttons/Fro mStation.html','resizable,location,menubar,toolbar,scrollbars,status'));">Trip Planner </button></a> 
+ 	 	</div> 
+ 	 	<div class="main-button"> 
+ 	 	 	<button class="btn"> <a 
+href="javascript:q=(document.location.href);void(open('https://m.opal.com.au/#','resizable,locati on,menubar,toolbar,scrollbars,status'));">Opal</button> 
+ 	 	</div> 
+ 	 	<div class="main-button"> 
+ 	 	 	<button class="btn"> <a 
+href="javascript:q=(document.location.href);void(open('http://localhost/registration/wireless.php ','resizable,location,menubar,toolbar,scrollbars,status'));">Wireless Access</button></a> 
+ 	 	</div> 
+ 
+<link href="app.css" rel="stylesheet" type="text/css"> 
+</html> 
+ 
+<body> 
+ 
+</body> 
+</html> 
+
+```
+
+
+
 
 
 ####  Mobile Application - Design 
 
 This section of the appendix looks at the different iteration of designs for the mobile application.
 
-![](media/image9.jpg){width="6.503472222222222in" height="7.333333333333333in"}
+![](../images/capstone/10.jpg)
 
-*Figure 3 - Design 1 *
+*Figure 3 - Design 1*
 
 The following designs were some preliminary ideas of what we would want the final mobile application to display.
 
-![](media/image12.jpg){width="9.093195538057742in" height="5.379861111111111in"}
+![](../images/capstone/11.jpg)
 
-*Figure 4 - Design 2A *
+*Figure 4 - Design 2A*
 
-![](media/image13.jpg){width="9.693055555555556in" height="5.839583333333334in"}
+![](../images/capstone/12.jpg)
 
-> *Figure 5 - Design 2B *
+*Figure 5 - Design 2B*
 
-![](media/image14.jpg){width="6.270833333333333in" height="5.583055555555555in"}
+!![](../images/capstone/13.jpg)
 
-> *Figure 6 - Design 2 *
+*Figure 6 - Design 2*
 
 #### Wireless -- Hardware Overview 
 
 ##### Potential device 
 
-![](media/image15.jpg){width="2.4479166666666665in" height="1.9687510936132984in"}
+![](../images/capstone/14.jpg)
 
 > Synology DS416 4 Bay NAS
 
@@ -836,7 +1207,7 @@ The reason why we do not choose Synology NAS:
 
 ##### Our Device 
 
-![](media/image16.jpg){width="4.447222222222222in" height="3.004861111111111in"}
+![](../images/capstone/15.jpg)
 
 **Motherboard**: we need to find a motherboard which has already integrated a CPU, because firstly, it lowers the noise of the fan since it does not have an independent CPU. Secondly, the performance of CPC is higher than manufacturer's NAS. Thirdly, the video card which is on the motherboard supports 4K video streaming. Then, ONDA Motherboard has Dual anti-static and lightning protection can effectively protect itself, it also has SATA 2.0 transmission which can obtain a higher transfer rate and three PCIE ports. The feature of gigabit ethernet card is essential for NAS.
 
@@ -854,4 +1225,6 @@ The reason why we do not choose Synology NAS:
 
 Netgear Nighthawk router has VPN support which secures remote access, and it has double firewall protection which are SPI and NAT. For Cisco smart switch, we do not need to talk about much, since every user knows the good performance of Cisco switch.
 
+*The table below will be covering the device requirements for our wireless function on the train. Device types can be group into two categories: NAS and network devices.*   
 
+![](../images/capstone/16.jpg)
