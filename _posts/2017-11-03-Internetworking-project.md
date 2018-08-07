@@ -771,7 +771,7 @@ The appendix of the report provides additional resources, research and code for 
 
 #### Seat Availability / People Counter  
 
-```
+```python
 import cv2 import sys 
  
 # Get user supplied values imagePath = sys.argv[1] 
@@ -801,7 +801,7 @@ cv2.imshow("Faces found", image) cv2.waitKey(0)
 
 Appendix 1: source code - Face Recognition with Python, in Under 25 Lines of Code  
 
-```
+```python
 import cv2 import sys 
  
 cascPath = "haarcascade_frontalface_default.xml" faceCascade = cv2.CascadeClassifier(cascPath) 
@@ -1014,7 +1014,7 @@ File Name: Create_User.PHP
 
 ##### File Name: Functions.PHP 
 
-```
+```php
 <?php  
 session_start(); 
  
@@ -1107,7 +1107,7 @@ function display_error() {
 
 File Name: HomePage.HTML 
 
-```
+```html
 <!DOCTYPE html> 
 <html> 
 <head> 
