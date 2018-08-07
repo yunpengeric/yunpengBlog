@@ -160,7 +160,9 @@ Before we conduct any research or even generating basic ideas of designs, we beg
 
 **Research: **
 
-After our group has successfully defined scope items for the project, we could then begin conducting our research into the different topic area. The goal of the research was to find a better understanding of how we could achieve the items that we specified within our scope. We conducted various research about how the seat availability process works and by researching about algorithms. After researching about the algorithms and how we are going to develop code for seat counting and considering our experience the goal was to use python coding for the coding of seat availability. The research was a continuous process throughout the development of the project as a greater understanding of errors or compile issues would be solved by research and discussion forums. Furthermore, we research into the python programming to expand our knowledge in those areas which was necessary to ensure that we could complete the coding of seat counting. **Planning & Design: **
+After our group has successfully defined scope items for the project, we could then begin conducting our research into the different topic area. The goal of the research was to find a better understanding of how we could achieve the items that we specified within our scope. We conducted various research about how the seat availability process works and by researching about algorithms. After researching about the algorithms and how we are going to develop code for seat counting and considering our experience the goal was to use python coding for the coding of seat availability. The research was a continuous process throughout the development of the project as a greater understanding of errors or compile issues would be solved by research and discussion forums. Furthermore, we research into the python programming to expand our knowledge in those areas which was necessary to ensure that we could complete the coding of seat counting. 
+
+**Planning & Design: **
 
 **Planning: **
 
@@ -170,7 +172,7 @@ Planning was a comparatively small phase as it only required us developing a Gan
 
 The design of the seat counting is performed by analysing an image zone composed by a set of virtual counting lines. The system runs on a commercial PC, does not need a special background and is easily adjustable to different camera height requirements. The image of virtual lines on how it will look like is shown in figure x.
 
-![](media/image1.jpg){width="4.6875in" height="3.8125in"}
+![](images/capstone/1.jpg)
 
 *Figure 1: Seat Availability Design - Virtual Lines *
 
