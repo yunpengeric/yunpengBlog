@@ -1,3 +1,8 @@
+---
+layout: post
+title: Shadowsocks Setup Guide for iOS
+---
+
 # Shadowsocks Setup Guide for iOS
 
 ## About Shadowsocks
