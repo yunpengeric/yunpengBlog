@@ -7,13 +7,7 @@ permalink: /posts/1
 nocomments: true  
 ---
 
-**Team Members** 
-
-Manraj Sangha, Ashit Hemani, Johnathan Khoury, Yunpeng Yi, Lahiru Yapa, Rong Quan Yau
-
-
-
-## Introduction 
+**Team Members**：Manraj Sangha, Ashit Hemani, Johnathan Khoury, Yunpeng Yi, Lahiru Yapa, Rong Quan Yau
 
 The report will focus on every aspect of the internetworking project by providing a comprehensive review of the entire product. The report will also specify any experimental results as well as discussion both challenges and solutions to those challenges if we were to re-do the project. Source code, research and even some designs will be mentioned within the appendix of the report with the body of the report focusing on the mentioned areas.
 

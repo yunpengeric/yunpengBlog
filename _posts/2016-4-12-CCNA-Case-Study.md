@@ -7,9 +7,9 @@ anyIndustries will implement the final configurations into the networking site t
 
 ## Topology Diagram 
 
-![1](../images/ccna/1.png)
+![1](../images/ccna/1.jpg)
 
-![1](../images/ccna/2.png)
+![1](../images/ccna/2.jpg)
 
 ##  Securing the Network Deliverables
 
@@ -214,7 +214,7 @@ anyIndustries will implement the final configurations into the networking site t
 
  
 
- 
+**Read my full report [here](https://drive.google.com/file/d/0B-Q1VQdsKi7RYXdWNW9Bcm5mM1U/view?usp=sharing).**
 
  
 
