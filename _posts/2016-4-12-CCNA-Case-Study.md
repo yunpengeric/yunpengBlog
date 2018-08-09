@@ -214,7 +214,7 @@ anyIndustries will implement the final configurations into the networking site t
 
  
 
-Read my full report [here](https://drive.google.com/file/d/0B-Q1VQdsKi7RYXdWNW9Bcm5mM1U/view?usp=sharing).
+Read my full report [**here**](https://drive.google.com/file/d/0B-Q1VQdsKi7RYXdWNW9Bcm5mM1U/view?usp=sharing).
 
  
 

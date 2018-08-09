@@ -190,4 +190,4 @@ As beyond 4G develop and perform more research the user's application needs may 
 
 
 
-Read my full report [here](https://drive.google.com/file/d/0B8_ultUvjADJeXEzbUEzelpxZ00/view).
+Read my full report [**here**](https://drive.google.com/file/d/0B8_ultUvjADJeXEzbUEzelpxZ00/view).
