@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Shadowsocks Setup Guide for iOS
+title: Shadowsocks Setup Guide for macOS
 ---
 
 # Shadowsocks Setup Guide for MacOS
