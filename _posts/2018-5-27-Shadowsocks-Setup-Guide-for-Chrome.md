@@ -39,7 +39,7 @@ title: Shadowsocks Setup Guide for Chrome
 
 > The configuration provided by our website uses "GFWList", which allows most websites that cannot be accessed directly in China to use the proxy by default. It is recommended for daily use in China.
 
- ![Select the profile file you just downloaded](../images/images-en/switchyOmega.PNG)
+ ![Select the profile file you just downloaded](../images/images-en/switchyOmega.png)
 
 ## Custom Rules
 
@@ -51,7 +51,7 @@ title: Shadowsocks Setup Guide for Chrome
 
 >* Profile: Select "proxy" to **go through the proxy**, select "Direct" to **not go through the proxy**.
 
-![Profile selection](../images/images-en/customize.PNG)
+![Profile selection](../images/images-en/customize.png)
 
 ## manual setting
 
@@ -59,10 +59,10 @@ title: Shadowsocks Setup Guide for Chrome
 
 * Click "New Profile..." > fill in "Profile Name" > select "Switch Porfile".
 
-![Click "New Profile..." > fill in "Profile Name" > select "Switch Porfile"](../images/images-en/new1.PNG)
+![Click "New Profile..." > fill in "Profile Name" > select "Switch Porfile"](../images/images-en/new1.png)
 
 * Click "Adda Rule List"> select "Rule List Rule"> select "Proxy" (If you previously imported our site's backup file, select ss.) > Select "AutoProxy" > Fill in the Rule List URL. https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt.
 
 * After completing the setting, you can auto-proxy by selecting this mode. If you have special needs, you can manually specify the proxy by adding conditions.
 
-![you can auto-proxy by selecting this mode](../images/images-en/new2.PNG)
+![you can auto-proxy by selecting this mode](../images/images-en/new2.png)
