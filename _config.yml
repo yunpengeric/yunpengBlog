@@ -1,14 +1,14 @@
 # Site settings
-title: Yunpeng Blog
+title: Eric Yi Blog
 url: "http://yunpengeric.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
-baseurl: "/yunpengBlog" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
+baseurl: "" # the prefix of your site uri, eg. `"/jekyll-theme-EasyBook"` or empty string `""`
 #timezone: Asia/Chongqing
 description: >
   One or more sentences introducing this blog.
 
 # Your information
 email: ericyi@hotmail.com
-author: Yunpeng Yi
+author: Eric Yi
 avatar: "./images/profile.jpg"
 profile: DevOps Engineer
 #twitter_username: twitter_username
