@@ -42,7 +42,7 @@ Below are the instructions for setting up your Potatso Lite to your iPhone.
 
 * Click "Add" > fill in the blank.
 
-![manual proxy](../images/images-en/step3-ios.PNG)
+![manual proxy](../images/images-en/step4-ios.png)
 
 * Select "Type" (select Shadowsocks)> fill in "server" (Node addresses
   )> fill in "port" (for your Service Port)> select "Encryption" > fill in "Password"> Fill in "Remarks" (It is optional, recommended to fill in the node location)> Click "✔" in the top left corner to complete the setting.
