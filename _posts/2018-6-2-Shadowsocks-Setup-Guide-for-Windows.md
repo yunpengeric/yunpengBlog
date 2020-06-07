@@ -2,9 +2,6 @@
 layout: post
 title: Shadowsocks Setup Guide for Windows
 ---
-
-# Shadowsocks Setup Guide for Windows
-
 ## About Shadowsocks
 
 * Shadowsocks is an open-source encrypted proxy project, Typically, the client software will open a socks5 proxy on the machine it is run, which internet traffic can then be directed towards, similarly to an SSH tunnel.
