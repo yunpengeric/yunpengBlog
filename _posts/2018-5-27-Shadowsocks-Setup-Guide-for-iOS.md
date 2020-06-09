@@ -3,8 +3,6 @@ layout: post
 title: Shadowsocks Setup Guide for iOS
 ---
 
-# Shadowsocks Setup Guide for iOS
-
 ## About Shadowsocks
 * Shadowsocks is an open-source encrypted proxy project, Typically, the client software will open a socks5 proxy on the machine it is run, which internet traffic can then be directed towards, similarly to an SSH tunnel.
 * Shadowsocks uses a self-designed protocol for secure communications. The encryption algorithms include AES, Blowfish, IDEA, and RC4. No handshaking is needed except for creating a TCP connection. Each request only forwards one connection and does not need to maintain the state of “always connected”, so it is relatively power-efficient on mobile devices. All traffic is algorithmically encrypted, allowing you to choose your own algorithm.
@@ -44,7 +42,7 @@ Below are the instructions for setting up your Potatso Lite to your iPhone.
 
 * Click "Add" > fill in the blank.
 
-![manual proxy](../images/images-en/step3-ios.PNG)
+![manual proxy](../images/images-en/step4-ios.png)
 
 * Select "Type" (select Shadowsocks)> fill in "server" (Node addresses
   )> fill in "port" (for your Service Port)> select "Encryption" > fill in "Password"> Fill in "Remarks" (It is optional, recommended to fill in the node location)> Click "✔" in the top left corner to complete the setting.

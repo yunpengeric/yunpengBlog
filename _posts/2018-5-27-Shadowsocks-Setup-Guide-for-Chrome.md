@@ -3,8 +3,6 @@ layout: post
 title: Shadowsocks Setup Guide for Chrome
 ---
 
-## Chrome + Proxy SwitchyOmega Settings
-
 ## Install Extensions
 
 * You can install [Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/padekgcemlokbadohgkifijomclgjgif) extension from the Chrome Store.

@@ -2,9 +2,6 @@
 layout: post
 title: Shadowsocks Setup Guide for Windows
 ---
-
-# Shadowsocks Setup Guide for Windows
-
 ## About Shadowsocks
 
 * Shadowsocks is an open-source encrypted proxy project, Typically, the client software will open a socks5 proxy on the machine it is run, which internet traffic can then be directed towards, similarly to an SSH tunnel.
@@ -41,7 +38,7 @@ Double-click on `Shadowsocks.exe`.
 
 After trying to run `Shadowsocks.exe`, you may see a dialog on your computer similar to the following one::
 
-![NetFramework errors](../images/images-en/NetFramework.PNG)
+![NetFramework errors](../images/images-en/NetFramework.png)
 
 It means that your computer needs to install the .NET Framework.
 Please click [here](https://www.microsoft.com/en-us/download/details.aspx?id=53345) to download the latest version of the .NET Framework.
@@ -56,7 +53,7 @@ Please click [here](https://www.microsoft.com/en-us/download/details.aspx?id=533
 
 Double-click on Shadowsocks.exe to see that the node information and account have been automatically filled.
 
-- On your system tray, right click ![ss icon](../images/images-en//Icon.png) > "Enable System Proxy".
+- On your system tray, right click ![ss icon](../images/images-en//Icon.PNG) > "Enable System Proxy".
 
 ![Enable System Proxy"](../images/images-en/enable.PNG)
 
@@ -73,7 +70,7 @@ This QR code also applies to other clients.
 
 - On your system tray, right click ![alt text](../images/images-en/Icon.png) > "Mode" > "PAC Mode".
 
-![PAC Mode](../images/images-en/pac.PNG)
+![PAC Mode](../images/images-en/pac.png)
 
 - If you cannot access the website using the PAC mode, go to [here](downloads/pac.txt) to download the "pac configuration file" and drag `pac.txt` in the same directory as `Shadowsocks.exe`.
 
