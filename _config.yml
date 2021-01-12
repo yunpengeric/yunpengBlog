@@ -10,9 +10,9 @@ description: >
 email: ericyi@hotmail.com
 author: Eric Yi
 avatar: "./images/profile.jpg"
-profile: DevOps Engineer
+profile:  Site Reliability Engineer
 #twitter_username: twitter_username
-#github_username:  github_username
+#github_username: yunpengeric
 profile_links:
   Email: "ericyi@hotmail.com"
   GitHub: "https://github.com/yunpengeric"
