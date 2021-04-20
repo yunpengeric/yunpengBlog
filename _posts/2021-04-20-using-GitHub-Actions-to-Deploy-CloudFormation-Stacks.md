@@ -125,7 +125,7 @@ Then we add `parameter-overrides` in the `Deploy to AWS CloudFormation` step.
     name: s3-buckets
     template: s3.yml
     parameter-overrides: >-
-	BucketName=${{ github.event.inputs.bucketName }}
+    	BucketName=${{ github.event.inputs.bucketName }}
 ```
 
 Let's finally organise our action file `main.yml`.
