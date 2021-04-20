@@ -1,5 +1,3 @@
-# Using GitHub Actions to Deploy CloudFormation Stacks
-
 # Background
 
 GitHub Actions is generally available at the end of 2019. Thanks to the open marketplace of GitHub Actions, more and more projects are using it. 
