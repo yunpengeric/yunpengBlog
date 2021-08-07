@@ -4,5 +4,5 @@ title: About
 permalink: /about/
 ---
 
-Welcome Yunpeng ‘s website!
+Promote Cloud Native technologies. Believe in the KISS principle. 🙃
 
