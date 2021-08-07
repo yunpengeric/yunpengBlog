@@ -57,9 +57,9 @@ Run the webhookrelayd container:
 
 ```bash
 docker run -d \
-	       --name webhookrelayd \
+	   --name webhookrelayd \
            --restart=unless-stopped \
-		   webhookrelay/webhookrelayd 
+           webhookrelay/webhookrelayd 
 					
 ```
 
