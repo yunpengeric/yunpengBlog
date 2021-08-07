@@ -5,4 +5,5 @@ permalink: /about/
 ---
 
 Promote Cloud Native technologies. Believe in the KISS principle. 🙃
+![she](images/aboutgif.gif)
 
