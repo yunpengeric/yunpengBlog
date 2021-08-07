@@ -1,5 +1,3 @@
-# Using GitHub Actions to Deploy CloudFormation Stacks
-
 # Background
 
 GitHub Actions is generally available at the end of 2019. Thanks to the open marketplace of GitHub Actions, more and more projects are using it. 
@@ -113,7 +111,7 @@ on:
       BucketName:
         description: "Name your Bucket"
         required: true
-	    default: "demo-bucket"
+	default: "demo-bucket"
 ```
 
 Then we add `parameter-overrides` in the `Deploy to AWS CloudFormation` step.
@@ -124,8 +122,8 @@ Then we add `parameter-overrides` in the `Deploy to AWS CloudFormation` step.
   with:
     name: s3-buckets
     template: s3.yml
-	parameter-overrides: >-
-	    BucketName=${{ github.event.inputs.bucketName }}
+    parameter-overrides: >-
+    	BucketName=${{ github.event.inputs.bucketName }}
 ```
 
 Let's finally organise our action file `main.yml`.
