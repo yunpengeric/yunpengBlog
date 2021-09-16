@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Use Prometheus and Grafana to Visualize ISP Packet Loss
+title: Using Prometheus and Grafana to Visualize ISP Packet Loss
 ---
 ## Background
 
