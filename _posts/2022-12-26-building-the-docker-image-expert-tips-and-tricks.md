@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building the Docker Image: Expert Tips and Tricks
+title: "Building the Docker Image: Expert Tips and Tricks"
 ---
 ## Background
 
